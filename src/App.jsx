@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
+import ObjectWin from "./ObjectWin"
+
 
 class App extends Component {
   render() {
