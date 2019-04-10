@@ -5,11 +5,7 @@ import './FicheWin.css'
 const FicheWin = props => (
       
       <div className= "ContenairWin">
-        <div >
-            
          <img className= "ImageWin" src={props.vin.image}/>
-
-        </div>
         <h2 className= "titleWin">
             {props.vin.titel} 
         </h2>
@@ -17,9 +13,7 @@ const FicheWin = props => (
             <a href={props.vin.link} > {props.vin.nameLink}</a>
         </div>
         <div className= "Description">
-
-        <p>{props.vin.description}</p>
-
+            <p>{props.vin.description}</p>
         </div>
       </div>
 )
