@@ -5,7 +5,7 @@ import Contactform from './Contactform'
 class App extends Component {
   render() {
     return (
-
+      <Contactform/>
     );
   }
 }

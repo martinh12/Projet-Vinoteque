@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Col, Button, Form, FormGroup, Label, Input} from 'reactstrap';
 import './Contactform.css'
 
 
@@ -7,26 +7,26 @@ import './Contactform.css'
 class Contactform extends Component {
     render (){
         return (
-            <div class="container">
-                <div class = 'row'>
-                    <div class="col-md-3" >
+            <div className="container contactForm">
+                <div className = 'row'>
+                    <div className="col-md-3" >
                         </div>
-                    <div class="col-12 col-md-6" > 
-                        <Form className = "contactForm">
+                    <div className="col-12 col-md-6" > 
+                        <Form>
                             <FormGroup row>
-                                <Label for="Name" sm={2}>Nom</Label>
+                                <Label htmlFor="Name" sm={2}>Nom</Label>
                                 <Col sm={10}>
                                     <Input type="text" name='name' id="Name"/>
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
-                                <Label for="Email" sm={2}>Email</Label>
+                                <Label htmlFor="Email" sm={2}>Email</Label>
                                 <Col sm={10}>
                                     <Input type="email" name="email" id="Email" placeholder="@" />
                                 </Col>
                                 </FormGroup>
                             <FormGroup row>
-                                <Label for="objet" sm={2}>Objet</Label>
+                                <Label htmlFor="objet" sm={2}>Objet</Label>
                                 <Col sm={10}>
                                     <Input type="select" name="objet" id="objet">
                                         <option>Demande de partenariat</option>
@@ -37,7 +37,7 @@ class Contactform extends Component {
                                 </Col>
                             </FormGroup>
                             <FormGroup row>
-                                <Label for="Text" sm={2}>Votre message</Label>
+                                <Label fhtmlFor="Text" sm={2}>Votre message</Label>
                                 <Col sm={10}>
                                     <Input type="textarea" name="text" id="Text" />
                                 </Col>
