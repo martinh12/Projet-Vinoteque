@@ -1,0 +1,14 @@
+form {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.adminMainTitle {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.adminMainTitle, img {
+    border-radius: 10px;
+}
