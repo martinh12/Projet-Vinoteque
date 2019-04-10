@@ -13,7 +13,7 @@ class Contactform extends Component {
                         </div>
                     <div class="col-12 col-md-6" > 
                         <Form className = "contactForm">
-                        <   FormGroup row>
+                            <FormGroup row>
                                 <Label for="Name" sm={2}>Nom</Label>
                                 <Col sm={10}>
                                     <Input type="text" name='name' id="Name"/>
