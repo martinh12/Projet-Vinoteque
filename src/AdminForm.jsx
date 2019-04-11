@@ -1,6 +1,8 @@
 import React from 'react';
 import { Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import ImageUploadComponent from './ImageUploadComponent.jsx'
 import './AdminForm.css';
+
 
 export default class AdminForm extends React.Component {
   render() {
@@ -9,11 +11,10 @@ export default class AdminForm extends React.Component {
 
         <div className="adminMainTitle">
           <h1>Espace administration</h1><br />
-          <img src="https://image.noelshack.com/fichiers/2019/15/3/1554909236-ed2e991ac462db51e226b4ebff1879.jpg" alt="bouteilleVin"></img>
-
+          <ImageUploadComponent />
         </div>
 
-        <Form>
+        <Form className="formAdmin">
 
           <FormGroup row>
             <Label for="wineName" sm={4}>Nom du vin</Label>
@@ -67,15 +68,6 @@ export default class AdminForm extends React.Component {
             </Col>
           </FormGroup>
 
-          <FormGroup row>
-            <Label for="winePicture" sm={4}>Image</Label>
-            <Col sm={8}>
-              <Input type="file" name="winepicture" id="winepicture" />
-              <FormText color="muted">
-                Ajouter ici l'image/photo de votre vin.
-            </FormText>
-            </Col>
-          </FormGroup>
 
           <FormGroup check row>
             <Col sm={{ size: 10, offset: 4 }}>
