@@ -35,16 +35,16 @@ class Quizz extends Component {
         let mycmd;
         switch (this.state.step) {
             case 1:
-                mycmd = <Question1 StepPlus={this.plusStep} />;
+                mycmd = <Question1 plusStep={this.plusStep} />;
                 break;
             case 2:
-                mycmd = <Question2 StepPlus={this.plusStep} />;
+                mycmd = <Question2 plusStep={this.plusStep} />;
                 break;
             case 3:
-                mycmd = <Question3 StepPlus={this.plusStep} />;
+                mycmd = <Question3 plusStep={this.plusStep} />;
                 break;
             case 4:
-                mycmd = <Question4 StepPlus={this.plusStep} />;
+                mycmd = <Question4 plusStep={this.plusStep} />;
                 break;
             default:
                 mycmd = <Question1 />
@@ -55,9 +55,9 @@ class Quizz extends Component {
 
     render() {
         return (
-            <Container>
+            <Container className="Quizz">
                 <Row>
-                    <Col className="Quizz text-center">
+                    <Col className="text-center">
                         <div>
                             <ProgressBar percentage={this.state.percentage} />
                             {this.getQuestion()}

@@ -7,10 +7,10 @@ class Question1 extends Component {
             <div className="Question1">
                 <h2>Pour quel évènement ?</h2>
                 <ul>
-                    <li> <button onClick={this.props.StepPlus}>Entre amis</button> </li>
-                    <li> <button onClick={this.props.StepPlus}>Au quotidien</button> </li>
-                    <li> <button onClick={this.props.StepPlus}>Apéro</button> </li>
-                    <li> <button onClick={this.props.StepPlus}>Grande Occasion</button> </li>
+                    <li> <button onClick={this.props.plusStep}>Entre amis</button> </li>
+                    <li> <button onClick={this.props.plusStep}>Au quotidien</button> </li>
+                    <li> <button onClick={this.props.plusStep}>Apéro</button> </li>
+                    <li> <button onClick={this.props.plusStep}>Grande Occasion</button> </li>
 
                 </ul>
             </div>

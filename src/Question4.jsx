@@ -6,11 +6,11 @@ class Question4 extends Component {
             <div className="Question4">
                 <h2>Quel Genre ?</h2>
                 <ul>
-                    <li> <button onClick={this.props.StepPlus}>Fruité</button> </li>
-                    <li> <button onClick={this.props.StepPlus}>Boisé</button> </li>
-                    <li> <button onClick={this.props.StepPlus}>Sec</button> </li>
-                    <li> <button onClick={this.props.StepPlus}>Tannique</button> </li>
-                    <li> <button onClick={this.props.StepPlus}>Je ne sais pas</button> </li>
+                    <li> <button onClick={this.props.plusStep}>Fruité</button> </li>
+                    <li> <button onClick={this.props.plusStep}>Boisé</button> </li>
+                    <li> <button onClick={this.props.plusStep}>Sec</button> </li>
+                    <li> <button onClick={this.props.plusStep}>Tannique</button> </li>
+                    <li> <button onClick={this.props.plusStep}>Je ne sais pas</button> </li>
 
 
                 </ul>
