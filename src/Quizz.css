@@ -1,0 +1,30 @@
+.bar {
+  position: relative;
+  height: 20px;
+  width: 350px;
+  border-radius: 50px;
+  border: 1px solid #333;
+  display: inline-block;
+}
+
+.filler {
+  background: blue;
+  height: 100%;
+  border-radius: inherit;
+  transition: width .2s ease-in;
+}
+
+.Quizz li {
+  list-style-type: none;
+}
+
+button {
+  margin-right: 10px;
+  padding: 7px 12px;
+  font-size: 14px;
+  background: #d14836;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  outline: 0;
+}
