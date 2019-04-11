@@ -57,8 +57,8 @@ class Quizz extends Component {
         return (
             <Container>
                 <Row>
-                    <Col className="text-center">
-                        <div className="Quizz">
+                    <Col className="Quizz text-center">
+                        <div>
                             <ProgressBar percentage={this.state.percentage} />
                             {this.getQuestion()}
                         </div>

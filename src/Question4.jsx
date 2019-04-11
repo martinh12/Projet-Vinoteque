@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Question4 extends Component {
     render() {
         return (
-            <div className="Question1">
+            <div className="Question4">
                 <h2>Quel Genre ?</h2>
                 <ul>
                     <li> <button onClick={this.props.StepPlus}>Fruité</button> </li>

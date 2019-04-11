@@ -1,16 +1,5 @@
 import React, { Component } from 'react';
-
-const Bar = (props) => {
-  return (
-    <div className="bar">
-      <Filler percentage={props.percentage} />
-    </div>
-  )
-}
-
-const Filler = (props) => {
-  return <div className="filler" style={{ width: `${props.percentage}%` }} />
-}
+import Bar from "./Bar"
 
 class ProgressBar extends Component {
 
