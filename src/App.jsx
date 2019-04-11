@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+
 import { Route, Switch, NavLink } from 'react-router-dom';
+import AdminForm from './AdminForm.jsx';
 import Contactform from './Contactform'
 import Accueil from './Accueil'
 import Quizz from './Quizz'
@@ -11,6 +13,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
+
       <div className = 'App'>
         <button>
           <NavLink exact to="/" activeStyle={{color: "red"}}> Acceuil </NavLink>
@@ -31,8 +34,7 @@ class App extends Component {
           <Route path="/contactform" component={Contactform} />
           <Route path="/adminForm" component={AdminForm} />
         </Switch>
-       
-      </div>
+       </div>
     );
   }
 }
