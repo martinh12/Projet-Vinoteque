@@ -29,7 +29,7 @@ class ImageUpload extends Component {
         let $imagePreview = null;
   
       return (
-        <div>
+        <div className="ImageUploadComponent">
             <form onSubmit={this.handleSubmit}>
                 <input type="file" onChange={this.handleImageChange} />
             </form><br/>

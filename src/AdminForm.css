@@ -1,14 +1,14 @@
-.formAdmin {
+.AdminForm .formAdmin {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.adminMainTitle {
+.AdminForm .adminMainTitle {
     text-align: center;
     padding-bottom: 30px;
 }
 
-.adminMainTitle, img {
+.AdminForm .adminMainTitle, img {
     border-radius: 10px;
 }
