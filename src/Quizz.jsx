@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import Question1 from "./Question1"
@@ -68,5 +69,6 @@ class Quizz extends Component {
         )
     }
 }
+
 
 export default Quizz;
