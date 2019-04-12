@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import { Route, Switch, NavLink } from 'react-router-dom';
-import AdminForm from './AdminForm.jsx';
 import Contactform from './Contactform'
 import Accueil from './Accueil'
 import Quizz from './Quizz'
