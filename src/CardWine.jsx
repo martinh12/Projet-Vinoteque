@@ -2,21 +2,21 @@ import React from 'react';
 import './CardWine.css'
 
 
-const cardWine = props => (
+const CardWine = props => (
       
       <div className= "CardWine">
-         <img className= "ImageWine" src={props.vin.image}/>
+         <img className= "imageWine" src={props.vin.image}/>
         <h2 className= "titleWine">
             {props.vin.titel} 
         </h2>
-        <div className= "LinkProducer">
+        <div className= "linkProducer">
             <a href={props.vin.link} > {props.vin.nameLink}</a>
         </div>
-        <div className= "Description">
+        <div className= "description">
             <p>{props.vin.description}</p>
         </div>
       </div>
 )
 
 
-export default cardWine;
+export default CardWine;
