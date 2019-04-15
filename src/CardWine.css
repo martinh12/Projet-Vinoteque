@@ -1,4 +1,4 @@
-.CardWine .ImageWine{
+.CardWine .imageWine{
     width: 20%;
     height: auto;
     display: block;
@@ -10,11 +10,11 @@
     text-align: center;
 }
 
-.CardWine .LinkProducer{
+.CardWine .linkProducer{
     text-align: center;
 }
 
-.CardWine .Description{
+.CardWine .description{
     border: 0px solid black;
     margin-top: 5%;
     margin-left: 30%;
