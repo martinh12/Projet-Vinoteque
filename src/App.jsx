@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ObjectWin from "./ObjectWin"
+import ObjectWine from "./ObjectWine"
 
 
 class App extends Component {

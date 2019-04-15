@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import FicheWin from './FicheWin';
+import CardWine from './CardWine';
 
 const vins = [
     {
@@ -23,7 +23,7 @@ class ObjectWin extends Component {
     render() {
         return (
             <div >
-                {vins.map(vin => (<FicheWin vin={vin} />))}
+                {vins.map(vin => (<CardWine vin={vin} />))}
             </div>
         )
     }

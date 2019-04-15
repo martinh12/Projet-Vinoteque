@@ -1,12 +1,12 @@
 import React from 'react';
-import './FicheWin.css'
+import './CardWine.css'
 
 
-const FicheWin = props => (
+const CardWine = props => (
       
-      <div className= "ContenairWin">
-         <img className= "ImageWin" src={props.vin.image}/>
-        <h2 className= "titleWin">
+      <div className= "ContenairWine">
+         <img className= "ImageWine" src={props.vin.image}/>
+        <h2 className= "titleWine">
             {props.vin.titel} 
         </h2>
         <div className= "LinkProducer">
@@ -19,4 +19,4 @@ const FicheWin = props => (
 )
 
 
-export default FicheWin;
+export default CardWine;
