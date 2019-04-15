@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ObjectWine from "./ObjectWine"
 
 
 class App extends Component {

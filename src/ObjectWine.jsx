@@ -22,7 +22,7 @@ const vins = [
 class ObjectWin extends Component {
     render() {
         return (
-            <div >
+            <div className= "ObjectWine" >
                 {vins.map(vin => (<CardWine vin={vin} />))}
             </div>
         )

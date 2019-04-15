@@ -4,7 +4,7 @@ import './CardWine.css'
 
 const CardWine = props => (
       
-      <div className= "ContenairWine">
+      <div className= "CardWine">
          <img className= "ImageWine" src={props.vin.image}/>
         <h2 className= "titleWine">
             {props.vin.titel} 
