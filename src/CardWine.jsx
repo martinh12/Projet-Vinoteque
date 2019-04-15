@@ -2,7 +2,7 @@ import React from 'react';
 import './CardWine.css'
 
 
-const CardWine = props => (
+const cardWine = props => (
       
       <div className= "CardWine">
          <img className= "ImageWine" src={props.vin.image}/>
@@ -19,4 +19,4 @@ const CardWine = props => (
 )
 
 
-export default CardWine;
+export default cardWine;
