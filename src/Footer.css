@@ -1,0 +1,52 @@
+
+.Footer{
+    font-size: 12px;
+    font-family: Verdana, Geneva, sans-serif;
+    color: #333;
+    background-color: #c7a2c6;
+    height: 100px;
+    line-height: 20px;
+    vertical-align: middle;
+    width: 100%;
+    position:absolute;
+    bottom:0px;
+}
+
+.Footer .home{
+    position:absolute;
+    left:30px;
+    bottom:50px;
+}
+
+.Footer .contact{
+    position:absolute;
+    left:30px;
+    bottom:10px;
+
+}
+
+.Footer .faceBook{
+    position:absolute;
+    right:30px;
+    bottom:20px;
+    background-color: transparent;
+    color: blue;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    font-size: 40px;
+}
+
+.Footer .twitter{
+    position:absolute;
+    right:10px;
+    bottom:20px;
+    background-color: transparent;
+    color: blue;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: none;
+    font-size: 40px;
+}
