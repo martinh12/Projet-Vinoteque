@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import gvft from './trads';
 
 class Question1 extends Component {
     render() {
@@ -6,10 +7,10 @@ class Question1 extends Component {
             <div className="Question1">
                 <h2>Pour quel évènement ?</h2>
                 <ul>
-                    <li> <button value="Entre amis" onClick={this.props.plusStep}>Entre amis</button> </li>
-                    <li> <button value="Au quotidien" onClick={this.props.plusStep}>Au quotidien</button> </li>
-                    <li> <button value="Apéro" onClick={this.props.plusStep}>Apéro</button> </li>
-                    <li> <button value="Grande Occasion" onClick={this.props.plusStep}>Grande Occasion</button> </li>
+                    <li> <button value="friends" onClick={this.props.plusStep}>{gvft('friends')}</button> </li>
+                    <li> <button value="daily" onClick={this.props.plusStep}>{gvft('daily')}</button> </li>
+                    <li> <button value="apero" onClick={this.props.plusStep}>{gvft('apero')}</button> </li>
+                    <li> <button value="bigDeal" onClick={this.props.plusStep}>{gvft('bigDeal')}</button> </li>
 
                 </ul>
             </div>

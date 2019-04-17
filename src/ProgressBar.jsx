@@ -6,7 +6,7 @@ class ProgressBar extends Component {
 
   render() {
     return (
-      <div classname = "ProgressBar" >
+      <div className = "ProgressBar" >
         <div className = {this.props.progress}>
           <h2> Progression des questions </h2>
           <Bar percentage={this.props.percentage} /> 
