@@ -16,13 +16,13 @@ class App extends Component {
 
       <div className = 'App'>
         <button>
-          <NavLink exact to="/" activeStyle={{color: "red"}}> Acceuil </NavLink>
+          <NavLink exact to="/" activeStyle={{color: "red"}}> Accueil </NavLink>
         </button>
         <button>
-          <NavLink to="/quizz" activeStyle={{color: "red"}}> Les questions </NavLink>
+          <NavLink to="/quizz" activeStyle={{color: "red"}}> Questions </NavLink>
         </button>
         <button>
-          <NavLink to="/contactform" activeStyle={{color: "red"}}> Contactez nous </NavLink>
+          <NavLink to="/contactform" activeStyle={{color: "red"}}> Contactez-nous </NavLink>
         </button>        
         <button>
           <NavLink to="/adminForm" activeStyle={{color: "red"}}> Administration </NavLink>
