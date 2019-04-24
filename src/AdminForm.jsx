@@ -47,12 +47,10 @@ export default class AdminForm extends React.Component {
         if (res.error) {
             alert(res.error);
         } else {
-          console.log(res)
-            alert(`vin ajouté avec l'ID ${res}!`);
+          alert(`vin ajouté avec l'ID ${res}!`);
         }
         }).catch(e => {
-        console.error(e);
-        alert('Erreur lors de l\'ajout d\'un vin');
+          alert('Erreur lors de l\'ajout d\'un vin');
         });
   }
   
