@@ -153,7 +153,7 @@ export default class AdminForm extends React.Component {
               >
                 <option value='redMeat'>{gvft('redMeat')}</option>
                 <option value='whiteMeat'>{gvft('whiteMeat')}</option>
-                <option value='seaFood'>{gvft('seafood')}</option>
+                <option value='seafood'>{gvft('seafood')}</option>
                 <option value='delicatessen'>{gvft('delicatessen')}</option>
                 <option value='cheese'>{gvft("cheese")}</option>
                 <option value='afters'>{gvft('afters')}</option>
@@ -185,9 +185,9 @@ export default class AdminForm extends React.Component {
               >
                 <option value='fruity'>{gvft('fruity')}</option>
                 <option value='wooded' >{gvft('wooded')}</option>
-                <option value='tannic' >{gvft('dry')}</option>
-                <option value='dry'>{gvft('mellow')}</option> 
-                <option value='mellow' >{gvft('tannic')}</option>
+                <option value='tannic' >{gvft('tannic')}</option>
+                <option value='dry'>{gvft('dry')}</option> 
+                <option value='mellow' >{gvft('mellow')}</option>
               </Input>
             </Col>
           </FormGroup>
