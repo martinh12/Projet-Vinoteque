@@ -6,6 +6,7 @@ import Question3 from "./Question3"
 import Question4 from "./Question4"
 import ProgressBar from "./ProgressBar"
 import Tagbutton from "./Tagbutton"
+import ObjectWine from './ObjectWine'
 import './Quizz.css';
 
 class Quizz extends Component {
@@ -54,7 +55,7 @@ class Quizz extends Component {
                 mycmd = <Question4 plusStep={this.plusStep} choice={this.state.choice} goBackQuestion={this.goBackQuestion}/>;
                 break;
             case 4:
-                mycmd  = "";
+                mycmd  = <ObjectWine/>;
                 if (this.state.progress !== "hidden"){this.setState({progress: "hidden"})};
                 break;
             default:

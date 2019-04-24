@@ -19,7 +19,7 @@ class App extends Component {
           <NavLink exact to="/" activeStyle={{color: "red"}}> Accueil </NavLink>
         </button>
         <button>
-          <NavLink to="/quizz" activeStyle={{color: "red"}}> Questions </NavLink>
+          <NavLink to="/" activeStyle={{color: "red"}}> Questions </NavLink>
         </button>
         <button>
           <NavLink to="/contactform" activeStyle={{color: "red"}}> Contactez-nous </NavLink>
@@ -37,7 +37,7 @@ class App extends Component {
 
 
 
-        <Footer/>
+       
        </div>
     );
   }

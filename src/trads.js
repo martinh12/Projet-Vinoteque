@@ -57,10 +57,16 @@ const tags = [
         name: 'tannic',
         value: 'Tannique',
     },{
+        name: 'mellow',
+        value: 'Moelleux',
+    },
+    {
         name: 'idk',
         value: 'Je ne sais pas',
     }
  ];
+
+ export const gtfv = () => {};
 
 export default function(tag) {
     const findTag = tags.find(t => t.name === tag);
