@@ -5,7 +5,7 @@ import Accueil from './Accueil'
 import Quizz from './Quizz'
 import AdminForm from './AdminForm'
 import Footer from "./Footer"
-
+import AdminPage from"./AdminPage"
 
 
 
@@ -15,6 +15,7 @@ class App extends Component {
     return (
 
       <div className = 'App'>
+        <div className = "body">
         <button>
           <NavLink exact to="/" activeStyle={{color: "red"}}> Accueil </NavLink>
         </button>
@@ -34,11 +35,8 @@ class App extends Component {
           <Route path="/contactform" component={Contactform} />
           <Route path="/adminForm" component={AdminForm} />
         </Switch>
-
-
-
-       
-       </div>
+        </div>
+     </div>
     );
   }
 }
