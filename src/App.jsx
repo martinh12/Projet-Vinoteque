@@ -4,7 +4,7 @@ import Contactform from './Contactform'
 import Accueil from './Accueil'
 import Quizz from './Quizz'
 import AdminForm from './AdminForm'
-//import Footer from "./Footer"
+
 
 
 
