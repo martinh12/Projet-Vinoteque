@@ -13,7 +13,7 @@ class Contactform extends Component {
                         </div>
                     <div className="col-12 col-md-6" > 
                         <Form>
-                            <FormGroup row>
+                           <FormGroup row>
                                 <Label for="Name" sm={2}>Nom</Label>
                                 <Col sm={10}>
                                     <Input type="text" name='name' id="Name"/>
@@ -47,7 +47,7 @@ class Contactform extends Component {
                                     <Button>Submit</Button>
                                 </Col>
                             </FormGroup>
-                        </Form>
+                            </Form>
                     </div>
                 </div>
             </div>
