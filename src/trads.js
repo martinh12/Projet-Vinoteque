@@ -66,7 +66,10 @@ const tags = [
     }
  ];
 
- export const gtfv = () => {};
+ export const gtfv = (tag) => {
+    const findTag = tags.find(t => t.value === tag);
+    return findTag && findTag.name;
+ };
 
 export default function(tag) {
     const findTag = tags.find(t => t.name === tag);

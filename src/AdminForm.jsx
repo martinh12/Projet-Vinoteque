@@ -1,7 +1,8 @@
 import React from 'react';
 import { Col, Form, FormGroup, Label, Input, Button} from 'reactstrap';
-
+import gvft from './trads';
 import './AdminForm.css';
+
 
 
 export default class AdminForm extends React.Component {
@@ -150,13 +151,13 @@ export default class AdminForm extends React.Component {
                 onChange={this.onChange}
                 value={this.state.name}
               >
-                <option value='redMeat'>Viande rouge</option>
-                <option value='whiteMeat'>Viande blanche</option>
-                <option value='seaFood'>Poisson / Fruits de mer</option>
-                <option value='delicatessen'>Charcuterie</option>
-                <option value='cheese'>Fromage</option>
-                <option value='afters'>Dessert / sucré</option>
-                <option value='vegan'>Végan</option>
+                <option value='redMeat'>{gvft('redMeat')}</option>
+                <option value='whiteMeat'>{gvft('whiteMeat')}</option>
+                <option value='seaFood'>{gvft('seafood')}</option>
+                <option value='delicatessen'>{gvft('delicatessen')}</option>
+                <option value='cheese'>{gvft("cheese")}</option>
+                <option value='afters'>{gvft('afters')}</option>
+                <option value='vegan'>{gvft('vegan')}</option>
               </Input>
             </Col>
           </FormGroup>
@@ -182,11 +183,11 @@ export default class AdminForm extends React.Component {
                 onChange={this.onChange}
                 value={this.state.name}
               >
-                <option value='fruity'>Fruité</option>
-                <option value='wooded' >Boisé</option>
-                <option value='tannic' >Tannique</option>
-                <option value='dry' >Sec</option> 
-                <option value='mellow' >Moelleux</option>
+                <option value='fruity'>{gvft('fruity')}</option>
+                <option value='wooded' >{gvft('wooded')}</option>
+                <option value='tannic' >{gvft('dry')}</option>
+                <option value='dry'>{gvft('mellow')}</option> 
+                <option value='mellow' >{gvft('tannic')}</option>
               </Input>
             </Col>
           </FormGroup>
