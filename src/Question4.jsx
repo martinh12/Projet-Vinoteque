@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
+import gvft from './trads';
 
 class Question4 extends Component {
     render() {
         return (
             <div className="Question4">
+            
+            
                 <h2>Quel Genre ?</h2>
                 <ul>
-                    <li> <button onClick={this.props.plusStep}>Fruité</button> </li>
-                    <li> <button onClick={this.props.plusStep}>Boisé</button> </li>
-                    <li> <button onClick={this.props.plusStep}>Sec</button> </li>
-                    <li> <button onClick={this.props.plusStep}>Tannique</button> </li>
-                    <li> <button onClick={this.props.plusStep}>Je ne sais pas</button> </li>
-
-
+                    <li> <button value="fruity" onClick={this.props.plusStep}>{gvft('fruity')}</button> </li>
+                    <li> <button value="wooded" onClick={this.props.plusStep}>{gvft('wooded')}</button> </li>
+                    <li> <button value="dry" onClick={this.props.plusStep}>{gvft('dry')}</button> </li>
+                    <li> <button value="tannic" onClick={this.props.plusStep}>{gvft('tannic')}</button> </li>
+                    <li> <button value="idk" onClick={this.props.plusStep}>{gvft('idk')}</button> </li>
                 </ul>
             </div>
         )
