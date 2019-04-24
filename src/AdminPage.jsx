@@ -30,7 +30,7 @@ componentDidMount(){
         return(
             
                 <Container clasName="AdminPage">
-                {this.state.wines.map(x=> (<AdminCard wine={x}/>))}
+                {this.state.wines.map((x,i)=> (<AdminCard key={i} wine={x}/>))}
                 </Container>
             
 
