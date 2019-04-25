@@ -4,8 +4,8 @@ import Contactform from './Contactform'
 import Accueil from './Accueil'
 import Quizz from './Quizz'
 import AdminForm from './AdminForm'
+import AdminPage from "./AdminPage"
 import Footer from "./Footer"
-
 import './App.css';
 
 class App extends Component {
@@ -14,6 +14,7 @@ class App extends Component {
 
       <div className = 'App'>
       <div className="custom-navbar">
+        <div className = "body">
         <button>
           <NavLink exact to="/" activeStyle={{color: "red"}}> Accueil </NavLink>
         </button>
@@ -24,7 +25,7 @@ class App extends Component {
           <NavLink to="/contactform" activeStyle={{color: "red"}}> Contactez-nous </NavLink>
         </button>        
         <button>
-          <NavLink to="/adminForm" activeStyle={{color: "red"}}> Administration </NavLink>
+          <NavLink to="/adminPage" activeStyle={{color: "red"}}> Administration </NavLink>
         </button>  
       </div>
       
@@ -32,11 +33,15 @@ class App extends Component {
           <Route exact path="/" component={Accueil} />
           <Route path="/quizz" component={Quizz} />
           <Route path="/contactform" component={Contactform} />
-          <Route path="/adminForm" component={AdminForm} />
+          <Route path="/adminPage" component={AdminPage} />
+          <Route exact path="/adminForm" component={AdminForm} />
+          <Route path="/adminForm/:id" component={AdminForm} />
         </Switch>
 
         <Footer/>
        </div>
+        </div>
+     </div>
     );
   }
 }

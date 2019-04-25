@@ -25,6 +25,23 @@ function Footer(props) {
                 </div>
                 <p>In Vino Veritas - ©Tous droits réservés - 2019</p>
             </div>   
+
+
+
+const Footer = () => (
+
+    <div className="Footer row">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"></link>
+
+
+        <div className="col-3">
+            <button className= "home">
+            <NavLink exact to="/" activeStyle={{color: "red"}}> Acceuil </NavLink>
+            </button>
+            <br/>
+            <button className= "contact">
+            <NavLink to="/contactform" activeStyle={{color: "red"}}> Contactez nous </NavLink>
+            </button>
         </div>
     );
 }

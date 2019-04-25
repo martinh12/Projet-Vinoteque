@@ -19,6 +19,15 @@
     width: 100%;
 }
 
+.Footer{
+    font-size: 12px;
+    color: #333;
+    background-color: #c7a2c6;
+    height: 100px;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
 .Footer .text-center {
     display: flex;
     justify-content: space-around;

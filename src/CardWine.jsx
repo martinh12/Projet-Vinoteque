@@ -5,9 +5,9 @@ import './CardWine.css'
 const CardWine = props => (
       
       <div className= "CardWine">
-         <img className= "imageWine" src={props.vin.image}/>
+         <img className= "imageWine" src={props.vin.image} alt=""/>
         <h2 className= "titleWine">
-            {props.vin.titel} 
+            {props.vin.title} 
         </h2>
         <div className= "linkProducer">
             <a href={props.vin.link} > {props.vin.nameLink}</a>
