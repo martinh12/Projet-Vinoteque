@@ -1,3 +1,7 @@
+.Home {
+   flex-grow: 1;
+}
+
 .Home h2{
     text-align: center;
     display: block;

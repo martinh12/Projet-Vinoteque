@@ -1,3 +1,7 @@
+.CardWine {
+    flex-grow: 1;
+}
+
 .CardWine .imageWine{
     width: 20%;
     height: auto;

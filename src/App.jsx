@@ -6,12 +6,14 @@ import Quizz from './Quizz'
 import AdminForm from './AdminForm'
 import AdminPage from "./AdminPage"
 import Footer from "./Footer"
+import './App.css';
 
 class App extends Component {
   render() {
     return (
 
       <div className = 'App'>
+      <div className="custom-navbar">
         <div className = "body">
         <button>
           <NavLink exact to="/" activeStyle={{color: "red"}}> Accueil </NavLink>
@@ -25,6 +27,7 @@ class App extends Component {
         <button>
           <NavLink to="/adminPage" activeStyle={{color: "red"}}> Administration </NavLink>
         </button>  
+      </div>
       
         <Switch>
           <Route exact path="/" component={Accueil} />
@@ -34,6 +37,9 @@ class App extends Component {
           <Route exact path="/adminForm" component={AdminForm} />
           <Route path="/adminForm/:id" component={AdminForm} />
         </Switch>
+
+        <Footer/>
+       </div>
         </div>
      </div>
     );
