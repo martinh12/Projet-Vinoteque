@@ -1,19 +1,12 @@
-.AdminCard .card-title{
-    text-align: center;
-};
 
-.AdminCard .buttonDemerd{
-background-color: red
-    
-}
-.AdminCard .col{
-    display:flex;
-    justify-content: center;
-}
 .AdminCard{
     display: inline-block;
+    margin-top:0.5em;
 }
-
+.AdminCard .col{
+    display: flex;
+    justify-content: center;
+}
 .AdminCard .imageCard{
     height: 250px;
     display:flex;
@@ -24,7 +17,10 @@ background-color: red
     max-height:100%;
 
 }
-
 .AdminCard .card-body{
- background-color: #fff5f2;
-}
+    background-color: #fff5f2;
+   }
+.AdminCard .card-title{
+    text-align: center;
+};
+

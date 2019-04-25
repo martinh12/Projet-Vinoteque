@@ -4,11 +4,8 @@ import Contactform from './Contactform'
 import Accueil from './Accueil'
 import Quizz from './Quizz'
 import AdminForm from './AdminForm'
+import AdminPage from "./AdminPage"
 import Footer from "./Footer"
-import AdminPage from"./AdminPage"
-
-
-
 
 class App extends Component {
   render() {
@@ -20,20 +17,22 @@ class App extends Component {
           <NavLink exact to="/" activeStyle={{color: "red"}}> Accueil </NavLink>
         </button>
         <button>
-          <NavLink to="/" activeStyle={{color: "red"}}> Questions </NavLink>
+          <NavLink to="/quizz" activeStyle={{color: "red"}}> Questions </NavLink>
         </button>
         <button>
           <NavLink to="/contactform" activeStyle={{color: "red"}}> Contactez-nous </NavLink>
         </button>        
         <button>
-          <NavLink to="/adminForm" activeStyle={{color: "red"}}> Administration </NavLink>
+          <NavLink to="/adminPage" activeStyle={{color: "red"}}> Administration </NavLink>
         </button>  
       
         <Switch>
           <Route exact path="/" component={Accueil} />
           <Route path="/quizz" component={Quizz} />
           <Route path="/contactform" component={Contactform} />
-          <Route path="/adminForm" component={AdminForm} />
+          <Route path="/adminPage" component={AdminPage} />
+          <Route exact path="/adminForm" component={AdminForm} />
+          <Route path="/adminForm/:id" component={AdminForm} />
         </Switch>
         </div>
      </div>
