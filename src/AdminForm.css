@@ -1,3 +1,7 @@
+.AdminForm {
+    flex-grow: 1;
+}
+
 .AdminForm .formAdmin {
     width: 50%;
     margin-left: auto;

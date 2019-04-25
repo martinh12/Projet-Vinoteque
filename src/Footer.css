@@ -1,52 +1,71 @@
+.Footer .row {
+    display: flex;
+    align-items: center;
+}
 
-.Footer{
-    font-size: 12px;
-    font-family: Verdana, Geneva, sans-serif;
-    color: #333;
-    background-color: #c7a2c6;
-    height: 100px;
-    line-height: 20px;
-    vertical-align: middle;
+.Footer p {
+    margin-bottom: 0.5%;
+}
+
+.Footer {
+    color: white;
+    background-color:rgb(119, 71, 71);
+    text-align: center;
+    display: flex;
     width: 100%;
-    position:absolute;
-    bottom:0px;
 }
 
-.Footer .home{
-    position:absolute;
-    left:30px;
-    bottom:50px;
+.Footer .container {
+    width: 100%;
 }
 
-.Footer .contact{
-    position:absolute;
-    left:30px;
-    bottom:10px;
-
+.Footer .text-center {
+    display: flex;
+    justify-content: space-around;
 }
 
-.Footer .faceBook{
-    position:absolute;
-    right:30px;
-    bottom:20px;
-    background-color: transparent;
-    color: blue;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border: none;
-    font-size: 40px;
+.Footer .title {
+    font-size: 23px;
 }
 
-.Footer .twitter{
-    position:absolute;
-    right:10px;
-    bottom:20px;
-    background-color: transparent;
-    color: blue;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border: none;
-    font-size: 40px;
+.Footer .logo {
+    margin-top: 0.5%;
+}
+
+.Footer .copyright {
+    width: 100%;
+    background-color: rgb(71, 42, 42);
+}
+
+.Footer a {
+    text-decoration: none;
+    color: white;    
+}
+
+.Footer a:hover {
+    color: white;
+}
+
+.Footer img {
+    overflow:hidden;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    border-radius:80px;
+    width:90px;
+    height:90px;
+} 
+
+@media screen and (max-width: 640px) {
+    .Footer .logo {
+        display: none;
+    }
+
+    .Footer .text-center {
+        margin-top : 5%;
+        margin-bottom : 3%;
+    }
+
+    .Footer p {
+        margin-bottom: 0;
+    }
 }
