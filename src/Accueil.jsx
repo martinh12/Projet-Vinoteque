@@ -57,7 +57,7 @@ class Accueil extends React.Component {
                     </button>
                 </div>
             ) : (
-                <div>
+                <div className="Home">
                     <CardWine vin={this.state.vin} />
                     <button className="random" onClick={this.getRandom}>
                         get another Random

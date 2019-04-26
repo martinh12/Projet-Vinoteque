@@ -14,16 +14,7 @@ class App extends Component {
 
       <div className = 'App'>
       <div className="custom-navbar">
-        <div className = "body">
-        <button>
-          <NavLink exact to="/" activeStyle={{color: "red"}}> Accueil </NavLink>
-        </button>
-        <button>
-          <NavLink to="/quizz" activeStyle={{color: "red"}}> Questions </NavLink>
-        </button>
-        <button>
-          <NavLink to="/contactform" activeStyle={{color: "red"}}> Contactez-nous </NavLink>
-        </button>        
+          
         <button>
           <NavLink to="/adminPage" activeStyle={{color: "red"}}> Administration </NavLink>
         </button>  
@@ -40,8 +31,7 @@ class App extends Component {
 
         <Footer/>
        </div>
-        </div>
-     </div>
+        
     );
   }
 }
