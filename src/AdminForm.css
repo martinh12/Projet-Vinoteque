@@ -1,3 +1,7 @@
+.AdminForm {
+    flex-grow: 1;
+}
+
 .AdminForm .formAdmin {
     width: 50%;
     margin-left: auto;
@@ -11,4 +15,12 @@
 
 .AdminForm .adminMainTitle, img {
     border-radius: 10px;
+}
+
+.AdminForm img.imgVin {
+    display:block;
+    width:100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px
 }

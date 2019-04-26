@@ -10,6 +10,16 @@
   * http://51.68.18.101:3002/vinoveritas/api/wines/:id
   > Permet de récupérer un vin en fonction de l'ID passé en paramètre
 
+* **GET** /wines/find
+  * http://51.68.18.101:3002/vinoveritas/api/wines/find
+  > Permet de récupérer un vin en fonction de certains critères
+  > Ex : http://51.68.18.101:3002/vinoveritas/api/wines/find?budget=less30&dish=seafood&characteristics=mellow
+  > Ex : http://51.68.18.101:3002/vinoveritas/api/wines/find?budget=more30&dish=seafood&characteristics=wooded
+
+* **GET** /wines/random
+  * http://51.68.18.101:3002/vinoveritas/api/wines/random
+  > Permet de récupérer un vin aléatoire
+
 * **POST** /wines/
   * http://51.68.18.101:3002/vinoveritas/api/wines/
   > Permet de sauvegarder un vin.

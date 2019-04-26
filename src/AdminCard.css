@@ -1,0 +1,26 @@
+
+.AdminCard{
+    display: inline-block;
+    margin-top:0.5em;
+}
+.AdminCard .col{
+    display: flex;
+    justify-content: center;
+}
+.AdminCard .imageCard{
+    height: 250px;
+    display:flex;
+    justify-content: center;
+}
+.AdminCard .card-img{
+    width: auto;
+    max-height:100%;
+
+}
+.AdminCard .card-body{
+    background-color: #fff5f2;
+   }
+.AdminCard .card-title{
+    text-align: center;
+};
+
