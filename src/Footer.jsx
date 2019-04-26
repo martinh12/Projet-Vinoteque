@@ -16,10 +16,10 @@ function Footer(props) {
                     </div>
                     <div className="col-sm-4">
                         <div className="text-center">
-                            <SocialIcon url="http://facebook.com" bgColor="white" />
-                            <SocialIcon url="http://twitter.com/jaketrent" bgColor="white" />
-                            <SocialIcon url="http://pinterest.com" bgColor="white" />
-                            <SocialIcon url="http://instagram.com" bgColor="white" />
+                            <SocialIcon url="http://facebook.com" bgColor="#fff7ee" />
+                            <SocialIcon url="http://twitter.com/jaketrent" bgColor="#fff7ee" />
+                            <SocialIcon url="http://pinterest.com" bgColor="#fff7ee" />
+                            <SocialIcon url="http://instagram.com" bgColor="#fff7ee" />
                         </div>
                     </div>
                 </div>

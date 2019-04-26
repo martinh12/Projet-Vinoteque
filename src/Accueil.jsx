@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import CardWine from './CardWine';
 import isEmpty from 'lodash/isEmpty';
@@ -40,30 +41,29 @@ class Accueil extends React.Component {
     render() {
         return (
             isEmpty(this.state.vin)
-            ? (
-                <div className="Home">
+                ? (
+                    <div className="Home">
 
-                    <h2> Une soirée? </h2>
-                    <h2> Un repas?</h2>
-                    <h2> Tu ne sais pas vin choisir ?</h2>
-                    <h2> N'hesite pas, laisse nous t'aider en seulement 4 questions !</h2>
+                        <h2> Une soirée? </h2>
+                        <h2> Un repas?</h2>
+                        <h2> Tu ne sais pas quel vin choisir ?</h2>
+                        <h2> N'hesite pas, laisse nous t'aider en seulement 4 questions !</h2>
 
-                    <button className="quizz">
-                        <NavLink to="/quizz" activeStyle={{ color: "red" }}> GO ! </NavLink>
-                    </button>
-                    <br />
-                    <button className="random" onClick={this.getRandom}>
-                        Random
-                    </button>
-                </div>
-            ) : (
-                <div className="Home">
-                    <CardWine vin={this.state.vin} />
-                    <button className="random" onClick={this.getRandom}>
-                        get another Random
-                    </button>
-                </div>
-            )
+                        <NavLink className="nav" to="/quizz" ><Button className="quizz"> GO! </Button> </NavLink>
+                        <h2> Ou un vin au hasard ?</h2>
+                        
+                        <Button className="random" onClick={this.getRandom}>
+                            Random
+                    </Button>
+                    </div>
+                ) : (
+                    <div className="Home">
+                        <CardWine vin={this.state.vin} />
+                        <Button className="random" onClick={this.getRandom}>
+                            get another Random
+                    </Button>
+                    </div>
+                )
         )
     }
 }

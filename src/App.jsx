@@ -13,6 +13,7 @@ class App extends Component {
     return (
 
       <div className = 'App'>
+      <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/> 
       <div className="custom-navbar">
           
         <button>

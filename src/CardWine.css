@@ -1,5 +1,6 @@
 .CardWine {
     flex-grow: 1;
+    background-color: #fff7ee;
 }
 
 .CardWine .imageWine{
