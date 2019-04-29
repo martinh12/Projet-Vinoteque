@@ -19,16 +19,17 @@
 }
 
 
-.Footer .text-center {
+.Footer .logoRight {
     display: flex;
     justify-content: space-around;
+    margin-top:0.5%;
 }
 
 .Footer .title {
     font-size: 23px;
 }
 
-.Footer .logo {
+.Footer .logoLeft {
     margin-top: 0.5%;
 }
 

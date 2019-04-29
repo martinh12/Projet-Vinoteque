@@ -8,15 +8,39 @@
 }
 
 .Filler {
-  background: blue;
+  background: rgb(143, 60, 60);
   height: 100%;
   border-radius: inherit;
   transition: width .2s ease-in;
 }
+.Quizz .band{
+  padding: 1vh;
+  border:1px solid black;
+  width:75vw;
+  margin-bottom:3vh;
+}
 
+.Quizz .imgQuizz > img{
+  width:100%;
+  height:auto;
+}
+.Quizz .imgLeft{
+  height:70vh;
+  display: flex;
+  justify-content: center;
+}
+.Quizz .textRight{
+  height:70vh;
+  justify-content: center;
+  align-items: center;
+
+}
 .Quizz {
   flex-grow: 1;
   background-color: #fff7ee;
+  display:flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .Quizz li {
@@ -27,9 +51,51 @@
   margin-right: 10px;
   padding: 7px 12px;
   font-size: 14px;
-  background: #d14836;
+  background: rgb(143, 60, 60);
   color: white;
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   outline: 0;
+  border-radius: 10px;
+  border:rgb(143, 60, 60);
+}
+.Quizz button:hover{
+  background: #F4A460;
+  color:black;
+  transition: 0.3s;
+}
+.Tagbutton button{
+  background-color:#F4A460 ;
+  border:1px solid #F4A460 ;
+  color:black;
+  margin-top:4vh;
+  margin-bottom: 4vh;
+  border-radius: 10px;
+}
+.Quizz .hidden {
+  display:none
+}
+.Tagbutton button:hover{
+  background:rgb(143, 60, 60);
+  color:white;
+  transition: 0.3s;
+}
+.Question1 h2{
+  margin-top:2vh;
+  margin-bottom:4vh;
+}
+.Question2 h2{
+  margin-top:2vh;
+  margin-bottom:4vh;
+}
+.Question3 h2{
+  margin-top:2vh;
+  margin-bottom:4vh;
+}
+.Question4 h2{
+  margin-top:2vh;
+  margin-bottom:4vh;
+}
+.Question2 button{
+  margin-top:2vh;
 }

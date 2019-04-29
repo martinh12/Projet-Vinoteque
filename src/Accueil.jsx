@@ -42,19 +42,25 @@ class Accueil extends React.Component {
         return (
             isEmpty(this.state.vin)
                 ? (
-                    <div className="Home">
+                    <div className=" container Home">
+                        <div className="row band">
+                            <div className="col-lg-4 imgLeft">
+                                <img className="img" src="http://vin.domaine-st-antoine.com/assets/upload/wine/intuition-bottle-glass.png" alt="vinos" />
+                            </div>
+                            <div className="col-lg-8 textRight">
+                                <h2> Une soirée? Un repas?</h2>
+                                <br/>
+                                <h2> Tu ne sais pas quel vin choisir ?</h2>
+                                <br/>
+                                <h2> N'hesite pas, laisse nous t'aider en seulement 4 questions !</h2>
+                                <br/>
+                                <div className="row buttons">
+                                    <div className="col-6"><NavLink className="nav" to="/quizz" ><Button className="quizz"> C'est parti ! </Button> </NavLink></div>
 
-                        <h2> Une soirée? </h2>
-                        <h2> Un repas?</h2>
-                        <h2> Tu ne sais pas quel vin choisir ?</h2>
-                        <h2> N'hesite pas, laisse nous t'aider en seulement 4 questions !</h2>
-
-                        <NavLink className="nav" to="/quizz" ><Button className="quizz"> GO! </Button> </NavLink>
-                        <h2> Ou un vin au hasard ?</h2>
-                        
-                        <Button className="random" onClick={this.getRandom}>
-                            Random
-                    </Button>
+                                    <div className="col-6"><Button className="random" onClick={this.getRandom}> Au hasard </Button></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 ) : (
                     <div className="Home">
