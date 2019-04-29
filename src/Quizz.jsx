@@ -6,8 +6,10 @@ import Question3 from "./Question3"
 import Question4 from "./Question4"
 import ProgressBar from "./ProgressBar"
 import Tagbutton from "./Tagbutton"
-import ObjectWine from './ObjectWine'
+import DisplayWine from './DisplayWine'
+
 import './Quizz.css';
+
 
 class Quizz extends Component {
     constructor(props) {
@@ -16,7 +18,7 @@ class Quizz extends Component {
             step: 0,
             choice: [],
             percentage: 0,
-            progress : ""
+            progress : "",
         }
     }
 
@@ -39,6 +41,8 @@ class Quizz extends Component {
             })
         }
     }
+
+
     getQuestion = () => {
         let mycmd;
         switch (this.state.step) {
@@ -55,7 +59,7 @@ class Quizz extends Component {
                 mycmd = <Question4 plusStep={this.plusStep} choice={this.state.choice} goBackQuestion={this.goBackQuestion}/>;
                 break;
             case 4:
-                mycmd  = <ObjectWine/>;
+                mycmd = <DisplayWine budget={this.state.choice[2]} dish={this.state.choice[1]} characteristics={this.state.choice[3]} />
                 if (this.state.progress !== "hidden"){this.setState({progress: "hidden"})};
                 break;
             default:
@@ -63,6 +67,10 @@ class Quizz extends Component {
         }
         return mycmd
     }
+
+
+
+  
 
     goBackQuestion = (event)=>{
         if (this.state.step < 4){ 
