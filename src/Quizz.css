@@ -15,7 +15,6 @@
 }
 .Quizz .band{
   padding: 1vh;
-  border:1px solid black;
   width:75vw;
   margin-bottom:3vh;
 }
@@ -50,13 +49,14 @@
 .Quizz button {
   margin-right: 10px;
   padding: 7px 12px;
-  font-size: 14px;
+  font-size: 25px;
   background: rgb(143, 60, 60);
   color: white;
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   outline: 0;
   border-radius: 10px;
+  margin-bottom:2vh;
   border:rgb(143, 60, 60);
 }
 .Quizz button:hover{
@@ -69,7 +69,7 @@
   border:1px solid #F4A460 ;
   color:black;
   margin-top:4vh;
-  margin-bottom: 4vh;
+  margin-bottom: 1vh;
   border-radius: 10px;
 }
 .Quizz .hidden {
@@ -80,21 +80,22 @@
   color:white;
   transition: 0.3s;
 }
+
 .Question1 h2{
   margin-top:2vh;
-  margin-bottom:4vh;
+  margin-bottom:2vh;
 }
 .Question2 h2{
   margin-top:2vh;
-  margin-bottom:4vh;
+  margin-bottom:2vh;
 }
 .Question3 h2{
   margin-top:2vh;
-  margin-bottom:4vh;
+  margin-bottom:2vh;
 }
 .Question4 h2{
   margin-top:2vh;
-  margin-bottom:4vh;
+  margin-bottom:2vh;
 }
 .Question2 button{
   margin-top:2vh;

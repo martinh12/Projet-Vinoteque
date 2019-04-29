@@ -45,15 +45,15 @@ class Accueil extends React.Component {
                     <div className=" container Home">
                         <div className="row band">
                             <div className="col-lg-4 imgLeft">
-                                <img className="img" src="http://vin.domaine-st-antoine.com/assets/upload/wine/intuition-bottle-glass.png" alt="vinos" />
+                                <img className="logo" src="logoWine.jpg" alt="vinos" />
                             </div>
                             <div className="col-lg-8 textRight">
                                 <h2> Une soirée? Un repas?</h2>
-                                <br/>
+                                <br />
                                 <h2> Tu ne sais pas quel vin choisir ?</h2>
-                                <br/>
+                                <br />
                                 <h2> N'hesite pas, laisse nous t'aider en seulement 4 questions !</h2>
-                                <br/>
+                                <br />
                                 <div className="row buttons">
                                     <div className="col-6"><NavLink className="nav" to="/quizz" ><Button className="quizz"> C'est parti ! </Button> </NavLink></div>
 
@@ -63,11 +63,15 @@ class Accueil extends React.Component {
                         </div>
                     </div>
                 ) : (
-                    <div className="Home">
-                        <CardWine vin={this.state.vin} />
-                        <Button className="random" onClick={this.getRandom}>
-                            get another Random
+                    <div className="Home container">
+                        <div className="row">
+                            <CardWine vin={this.state.vin} className="col-lg-12" />
+                            <div className="col-lg-12"> <Button className="random" onClick={this.getRandom}>
+                                Un autre vin au hasard !
                     </Button>
+                            </div>
+                        </div>
+
                     </div>
                 )
         )

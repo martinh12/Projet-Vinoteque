@@ -1,0 +1,42 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    color: black;
+    background-color:#fff7ee;
+    text-align: center;
+    
+}
+
+.Header .burger {
+    flex-direction: column;
+}
+
+.Header .nav-item {
+    text-align: left;
+}
+
+.Header .log-admin {
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Header .logoAdmin {
+    height: 25px;
+}
+
+@media screen and (max-width: 640px) {
+    .Header h1 {
+        font-size: 17px;
+        margin-top:17px;
+        text-align: center;
+}
+    .log-admin {
+        font-size: 13px;
+    }
+
+    .log-admin img {
+        height: 20px;
+    }
+}

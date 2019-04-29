@@ -111,7 +111,6 @@ class Quizz extends Component {
                         <Container className="Quizz">
                         <Row className="band">
                                     <Tagbutton choice={this.state.choice} step={this.state.step} goBackQuestion={this.goBackQuestion} />
-                            
                                 {this.getQuestion()}
                         </Row>
                     </Container>

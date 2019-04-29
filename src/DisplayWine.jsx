@@ -42,7 +42,7 @@ class DisplayWine extends Component {
                 <CardWine vin={this.state.displayedWine} />
                 {
                     (this.state.wines.length > 1 && !this.state.anotherWine)
-                    ? <button onClick ={this.get2ndWine}> 2eme vin</button>
+                    ? <button className="secondChoice"onClick ={this.get2ndWine}> 2e vin</button>
                     : ''
                 }
             </div>

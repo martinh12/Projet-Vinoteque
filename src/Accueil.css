@@ -7,7 +7,6 @@
 }
 .Home .band{
    padding: 1vh;
-   border:1px solid black;
 }
 .Home .imgLeft{
    height:70vh;
@@ -15,9 +14,9 @@
    justify-content: center;
 
 }
-.Home .img{
+.Home .logo{
    height:100%;
-   width:auto;
+   border-radius:50%
 }
 .Home .textRight{
    height:70vh;
@@ -33,6 +32,7 @@
 }
 .Home .buttons{
    margin-top:40px;
+
 }
 .Home .quizz{
    color:black;
@@ -54,7 +54,9 @@ background-color: rgb(143, 60, 60);
    color:black;
    font-weight: bold;
    display: block;
-   margin : auto;
+   margin-right:auto;
+   margin-left:auto;
+   margin-bottom:2vh;
    height:10vh;
    width:20vh;
    background-color: #F4A460;
