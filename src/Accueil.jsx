@@ -45,7 +45,7 @@ class Accueil extends React.Component {
                     <div className=" container Home">
                         <div className="row band">
                             <div className="col-lg-4 imgLeft">
-                                <img className="logo" src="logoWine.jpg" alt="vinos" />
+                                <img className="logo" src="vin.jpg" alt="vinos" />
                             </div>
                             <div className="col-lg-8 textRight">
                                 <h2> Une soirée? Un repas?</h2>
