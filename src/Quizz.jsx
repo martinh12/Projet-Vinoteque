@@ -6,14 +6,17 @@ import Question3 from "./Question3"
 import Question4 from "./Question4"
 import ProgressBar from "./ProgressBar"
 import Tagbutton from "./Tagbutton"
-import ObjectWine from './ObjectWine'
+import DisplayWine from './DisplayWine'
+
 import './Quizz.css';
+
 
 const imgQuestion = ["https://www.envie-apero.com/wp-content/uploads/2019/02/boitapero.jpeg",
 "http://img.over-blog-kiwi.com/0/81/60/50/20170605/ob_0866ea_chouette-aperitif.jpg",
 "https://www.carrefour.fr/media/1500x1500/Photosite/PGC/EPICERIE/3017239003884_PHOTOSITE_20180604_161320_0.jpg?placeholder=1",
 "https://www.slowlyveggie.fr/wp-content/uploads/sites/5/2017/04/recetteape%CC%81rovegan.png",
 "https://www.slowlyveggie.fr/wp-content/uploads/sites/5/2017/04/recetteape%CC%81rovegan.png"]
+
 
 class Quizz extends Component {
     constructor(props) {
@@ -22,7 +25,7 @@ class Quizz extends Component {
             step: 0,
             choice: [],
             percentage: 0,
-            progress: ""
+            progress : "",
         }
     }
 
@@ -63,8 +66,8 @@ class Quizz extends Component {
                 mycmd = <Question4 plusStep={this.plusStep} choice={this.state.choice} goBackQuestion={this.goBackQuestion} />;
                 break;
             case 4:
-                mycmd = <ObjectWine />;
-                if (this.state.progress !== "hidden") { this.setState({ progress: "hidden" }) };
+                mycmd = <DisplayWine budget={this.state.choice[2]} dish={this.state.choice[1]} characteristics={this.state.choice[3]} />
+                if (this.state.progress !== "hidden"){this.setState({progress: "hidden"})};
                 break;
             default:
                 mycmd = <Question1 />
@@ -82,10 +85,8 @@ class Quizz extends Component {
             this.setState({ choice: newChoice })
             const newPercentage = (ind) * 25
             this.setState({ percentage: newPercentage })
-
         }
     }
-
 
     render() {
         return (
