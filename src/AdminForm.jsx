@@ -15,7 +15,7 @@ export default class AdminForm extends React.Component {
       wineDress: 'red',
       dish: 'redMeat',
       budget: '',
-      characteristics: '',
+      characteristics: 'fruity',
       bio: '0',
       description: '',
       image: 'https://via.placeholder.com/150'
