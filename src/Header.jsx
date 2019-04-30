@@ -38,11 +38,11 @@ export default class Header extends React.Component {
                 </div>
 
                 <div className="main-title col-4">
-                    <h1>JeBoisQuoi.com</h1>
+                    <NavLink exact to="/" ><h1>JeBoisQuoi.com</h1></NavLink>
                 </div>
 
                 <div className="log-admin col-4">
-                    <img className="logoAdmin" src="logoadmin.png" alt="logo admin"/> <NavLink to="/adminPage" style={{color: 'black', textDecoration: 'none'}} activeStyle={{color: 'black', textDecoration: 'none'}} > Log in </NavLink>
+                    <img className="logoAdmin" src="logoadmin.png" alt="logo admin"/> <NavLink to="/adminPage" style={{color: 'black', textDecoration: 'none'}} activeStyle={{color: 'black', textDecoration: 'none'}} >Log in </NavLink>
                 </div>
 
             </div>

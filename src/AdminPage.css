@@ -1,8 +1,24 @@
+.AdminPage {
+    flex-grow: 1;
+    background-color: #fff7ee;
+}
 
-.row {
+.AdminPage .row {
     display: flex;
     justify-content: center;
-    }
+}
+
+.AdminPage h1 {
+    text-align : center;
+    margin-top: 50px;
+}
+
+.AdminPage .btn {
+    margin-top : 20px;
+    margin-bottom : 30px;
+    background-color: rgb(143, 60, 60);
+    border-color: rgb(143, 60, 60);
+}
     
 @media (min-width: 1200px){
     .container {

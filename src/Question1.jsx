@@ -6,13 +6,13 @@ class Question1 extends Component {
         return (
             <div className="Question1">
                 <h2>Pour quel évènement ?</h2>
-                
-                    <button value="friends" onClick={this.props.plusStep}>{gvft('friends')}</button> 
-                 <button value="daily" onClick={this.props.plusStep}>{gvft('daily')}</button> 
-                    <button value="apero" onClick={this.props.plusStep}>{gvft('apero')}</button> 
-                     <button value="bigDeal" onClick={this.props.plusStep}>{gvft('bigDeal')}</button> 
 
-                
+                <button value="friends" onClick={this.props.plusStep}>{gvft('friends')}</button>
+                <button value="daily" onClick={this.props.plusStep}>{gvft('daily')}</button>
+                <button value="apero" onClick={this.props.plusStep}>{gvft('apero')}</button>
+                <button value="bigDeal" onClick={this.props.plusStep}>{gvft('bigDeal')}</button>
+
+
             </div>
         )
     }

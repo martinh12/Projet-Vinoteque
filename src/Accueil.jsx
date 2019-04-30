@@ -42,17 +42,17 @@ class Accueil extends React.Component {
         return (
             isEmpty(this.state.vin)
                 ? (
-                    <div className=" container Home">
+                    <div className=" container  Home">
                         <div className="row band">
-                            <div className="col-lg-4 imgLeft">
+                            <div className="col-lg-5 imgLeft">
                                 <img className="logo" src="vin.jpg" alt="vinos" />
                             </div>
-                            <div className="col-lg-8 textRight">
-                                <h2> Une soirée? Un repas?</h2>
+                            <div className="col-lg-7 textRight">
+                                <h2> Une soirée entre amis ? Un repas en famille ?</h2>
                                 <br />
-                                <h2> Tu ne sais pas quel vin choisir ?</h2>
+                                <h2> Vous ne savez pas quel vin choisir ?</h2>
                                 <br />
-                                <h2> N'hesite pas, laisse nous t'aider en seulement 4 questions !</h2>
+                                <h2> N'hésitez pas, laissez nous vous guider en seulement 4 questions !</h2>
                                 <br />
                                 <div className="row buttons">
                                     <div className="col-6"><NavLink className="nav" to="/quizz" ><Button className="quizz"> C'est parti ! </Button> </NavLink></div>

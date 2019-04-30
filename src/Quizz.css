@@ -19,15 +19,21 @@
   margin-bottom:3vh;
 }
 
+.Quizz img {
+  height: 100%;
+}
+
 .Quizz .imgQuizz > img{
   width:100%;
   height:auto;
 }
+
 .Quizz .imgLeft{
   height:70vh;
   display: flex;
   justify-content: center;
 }
+
 .Quizz .textRight{
   height:70vh;
   justify-content: center;
@@ -60,13 +66,13 @@
   border:rgb(143, 60, 60);
 }
 .Quizz button:hover{
-  background: #F4A460;
+  background: #8DAE8B;
   color:black;
   transition: 0.3s;
 }
 .Tagbutton button{
-  background-color:#F4A460 ;
-  border:1px solid #F4A460 ;
+  background-color:#8DAE8B ;
+  border:1px solid #8DAE8B ;
   color:black;
   margin-top:4vh;
   margin-bottom: 1vh;
@@ -99,4 +105,40 @@
 }
 .Question2 button{
   margin-top:2vh;
+}
+
+@media screen and (max-width: 640px) {
+  .Quizz .imgLeft {
+    display: none;
+  }
+
+  .Quizz button {
+    font-size : 15px;
+  }
+
+  .Quizz .Question1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Quizz .Question1 button {
+    width : 50%;
+    margin-left:25%;
+  }
+
+  .Quizz .Question1 h2 {
+    margin-bottom : 25%;
+  }
+
+  .Quizz .Question3 h2 {
+    margin-bottom : 25%;
+  }
+
+  .Tagbutton button{
+    font-size: 10px;
+    margin-top : 3%;
+    margin-bottom: 1%;
+  }
+
 }

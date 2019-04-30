@@ -5,7 +5,15 @@
     color: black;
     background-color:#fff7ee;
     text-align: center;
-    
+}
+
+.Header a{
+    color: black;
+}
+
+.Header a:hover{
+    color:rgb(143, 60, 60);
+    text-decoration: none;
 }
 
 .Header .burger {
@@ -32,11 +40,15 @@
         margin-top:17px;
         text-align: center;
 }
-    .log-admin {
+    .Header .log-admin {
         font-size: 13px;
     }
 
-    .log-admin img {
+    .Header .log-admin img {
         height: 20px;
+    }
+
+    .Header .main-title {
+        margin-left: 0;
     }
 }

@@ -1,5 +1,6 @@
 .AdminForm {
     flex-grow: 1;
+    background-color: #fff7ee;
 }
 
 .AdminForm .formAdmin {
@@ -10,7 +11,7 @@
 
 .AdminForm .adminMainTitle {
     text-align: center;
-    padding-bottom: 30px;
+    margin-top: 10px;
 }
 
 .AdminForm .adminMainTitle, img {
@@ -25,7 +26,7 @@
     margin-bottom: 25px
 }
 
-.AdminForm .buttonAdminForm {
+.AdminForm .buttonForm {
     background-color: rgb(143, 60, 60);
     margin-bottom: 5px;
 }
@@ -33,4 +34,9 @@
     display: flex;
     justify-content: center;
     margin-bottom: 2vh;
+}
+
+.AdminForm .btn {
+    background-color: rgb(143, 60, 60);
+    border-color: rgb(143, 60, 60);
 }

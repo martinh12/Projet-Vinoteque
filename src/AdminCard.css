@@ -1,7 +1,7 @@
 
 .AdminCard{
     display: inline-block;
-    margin-top:0.5em;
+    margin-bottom: 30px;
 }
 .AdminCard .col{
     display: flex;
@@ -18,7 +18,7 @@
 
 }
 .AdminCard .card-body{
-    background-color: #fff5f2;
+    background-color: hsl(35, 23%, 84%);
    }
 .AdminCard .card-title{
     text-align: center;

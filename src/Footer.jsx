@@ -8,19 +8,19 @@ function Footer(props) {
         <div className="Footer">
             <div className="container">
                 <div className="row">
-                    <div className="logoLeft col-sm-2">
+                    <div className="col-xs-2 logoLeft">
                         <SocialIcon url="http://facebook.com" bgColor="#fff7ee" />
                     </div>
-                    <div className="logoLeft col-sm-2">
+                    <div className="col-xs-2 logoLeft">
                         <SocialIcon url="http://twitter.com/jaketrent" bgColor="#fff7ee" />
                     </div>
                     <div className="title col-sm-4">
                         <NavLink exact to="/" >Accueil</NavLink> - <NavLink to="/contactform" >Contact</NavLink>
                     </div>
-                    <div className="col-sm-2 logoRight">
+                    <div className="col-xs-2 logoRight">
                         <SocialIcon url="http://pinterest.com" bgColor="#fff7ee" />
                     </div>
-                    <div className="col-sm-2 logoRight">
+                    <div className="col-xs-2 logoRight">
                         <SocialIcon url="http://instagram.com" bgColor="#fff7ee" />
                     </div>
                 </div>

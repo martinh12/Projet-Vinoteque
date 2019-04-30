@@ -8,7 +8,7 @@ const CardWine =props => (
 
     <Container className="CardWine">
         <Row className="wine">
-            <Col lg="5" className="imgLeft">
+            <Col lg="5" className="imgLeftCardWine">
                 <img src={props.vin.image} alt="" />
             </Col>
             <Col lg="7" className="wineSpecs">
