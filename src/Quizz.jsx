@@ -65,10 +65,6 @@ class Quizz extends Component {
             case 3:
                 mycmd = <Question4 plusStep={this.plusStep} choice={this.state.choice} goBackQuestion={this.goBackQuestion} />;
                 break;
-            case 4:
-                mycmd = <DisplayWine budget={this.state.choice[2]} dish={this.state.choice[1]} characteristics={this.state.choice[3]} />
-                if (this.state.progress !== "hidden") { this.setState({ progress: "hidden" }) };
-                break;
             default:
                 mycmd = <Question1 />
         }
@@ -111,7 +107,7 @@ class Quizz extends Component {
                 <Container className="Quizz">
                     <Row className="band">
                         <Tagbutton choice={this.state.choice} step={this.state.step} goBackQuestion={this.goBackQuestion} />
-                        {this.getQuestion()}
+                        <DisplayWine budget={this.state.choice[2]} dish={this.state.choice[1]} characteristics={this.state.choice[3]} />
                     </Row>
                 </Container>
 
