@@ -15,7 +15,7 @@ export default class AdminForm extends React.Component {
       wineDress: 'red',
       dish: 'redMeat',
       budget: '',
-      characteristics: '',
+      characteristics: 'fruity',
       bio: '0',
       description: '',
       image: 'https://via.placeholder.com/150'
@@ -143,7 +143,7 @@ export default class AdminForm extends React.Component {
           </FormGroup>
 
           <FormGroup row>
-            <Label for="image" sm={4}>lien de l'image</Label>
+            <Label for="image" sm={4}>Lien de l'image</Label>
             <Col sm={8}>
               <Input type="url"
                 name="image"
@@ -206,7 +206,7 @@ export default class AdminForm extends React.Component {
           </FormGroup>
 
           <FormGroup row >
-            <Label for="budget" sm={4} >prix</Label>
+            <Label for="budget" sm={4} >Prix</Label>
             <Col sm={8}>
               <Input type="text"
                 name="budget"
@@ -236,7 +236,7 @@ export default class AdminForm extends React.Component {
           </FormGroup>
 
           <FormGroup row >
-            <Label for="bio" sm={4} >bio</Label>
+            <Label for="bio" sm={4} >Bio</Label>
             <Col sm={8}>
               <Input type="select"
                 name="bio"
@@ -265,8 +265,8 @@ export default class AdminForm extends React.Component {
 
 
           <FormGroup check row>
-            <Col sm={{ size: 10, offset: 4 }}>
-              <Button type="submit" value="Envoyer" > Envoyer</Button>
+            <Col className="buttonAdmin">
+              <Button className="buttonAdminForm" type="submit" value="Envoyer" > Envoyer</Button>
             </Col>
           </FormGroup>
 

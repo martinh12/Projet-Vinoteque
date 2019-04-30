@@ -59,10 +59,18 @@ const tags = [
     },{
         name: 'mellow',
         value: 'Moelleux',
-    },
-    {
+    },{
         name: 'idk',
         value: 'Je ne sais pas',
+    },{
+        name: 'red',
+        value: 'Rouge',
+    },{
+        name: 'white',
+        value: 'Blanc',
+    },{
+        name: 'rose',
+        value: 'Rosé',
     }
  ];
 

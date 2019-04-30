@@ -1,17 +1,18 @@
-.Footer .row {
-    display: flex;
-    align-items: center;
+.Footer {
+    color: white;
+    background-color:rgb(143, 60, 60);
+    text-align: center;
 }
+
+.Footer .row {
+    justify-content: space-around;
+    padding-top: 17px;
+    
+}
+
 
 .Footer p {
     margin-bottom: 0.5%;
-}
-
-.Footer {
-    color: white;
-    background-color:rgb(145, 43, 43);
-    text-align: center;
-    width: 100%;
 }
 
 .Footer .container {
@@ -19,22 +20,23 @@
 }
 
 
-.Footer .text-center {
+.Footer .logoRight {
     display: flex;
-    justify-content: space-around;
+    align-content:space-around;
+    margin-top:0.5%;
 }
 
 .Footer .title {
     font-size: 23px;
 }
 
-.Footer .logo {
+.Footer .logoLeft {
     margin-top: 0.5%;
 }
 
 .Footer .copyright {
     width: 100%;
-    background-color: rgb(71, 42, 42);
+    background-color: rgb(119, 42, 42);
 }
 
 .Footer a {
@@ -56,16 +58,17 @@
 } 
 
 @media screen and (max-width: 640px) {
-    .Footer .logo {
-        display: none;
-    }
-
     .Footer .text-center {
         margin-top : 5%;
         margin-bottom : 3%;
     }
 
+    .Footer .title {
+        display: none;
+    }
+
     .Footer p {
         margin-bottom: 0;
     }
+
 }

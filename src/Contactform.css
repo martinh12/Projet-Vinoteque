@@ -1,5 +1,63 @@
-.Contactform {
+.ContactForm {
     flex-grow: 1;
-    width: 80%;
-    margin-left: 10%;    
+    background-color: #fff7ee;
 }
+
+.ContactForm h1 {
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+.ContactForm img {
+    height: 100%;
+}
+
+.ContactForm .ContactForm> img{
+    width:100%;
+    height:auto;
+}
+  
+.ContactForm .imgLeft{
+    height:65vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.ContactForm .form {
+    margin-top: 130px;
+}
+
+.ContactForm .btn {
+    background-color: rgb(143, 60, 60);
+    border-color: rgb(143, 60, 60);
+}
+
+@media screen and (max-width: 640px) {
+    .ContactForm .imgLeft {
+        display: none;
+    }
+    .ContactForm .textRight {
+        height: 100%;
+    }
+    .ContactForm .form {
+        margin-top: 5px;
+    }
+    .ContactForm .btn {
+        margin-left : 100px;
+        margin-bottom : 5px;
+    }
+    .ContactForm h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+

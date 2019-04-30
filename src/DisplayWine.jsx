@@ -31,23 +31,28 @@ class DisplayWine extends Component {
     }
 
     render() {
+        let children = null;
+        if (!this.state.wines) {
+            children = (<p> 'Chargement en cours...'</p>);
+        } else if (this.state.wines.length === 0) {
+            children = (<p>Aucun vin ne correspond à votre demande</p>);
+        } else {
+            children = (
+                <div>
+                    <CardWine vin={this.state.displayedWine} />
+                    {
+                        (this.state.wines.length > 1 && !this.state.anotherWine)
+                        ? <button className="secondChoice"onClick ={this.get2ndWine}>Autre choix</button>
+                        : ''
+                    }
+                </div>
+            )
+        }
+
         return(
             <div className="DisplayWine">
-            {
-                (!this.state.wines)
-                ? <p> 'Chargement en cours...'</p>
-                : (this.state.wines.length === 0)
-                ? <p>Aucun vin ne correspond à votre demande</p>
-                : <div>
-                <CardWine vin={this.state.displayedWine} />
-                {
-                    (this.state.wines.length > 1 && !this.state.anotherWine)
-                    ? <button onClick ={this.get2ndWine}> 2eme vin</button>
-                    : ''
-                }
+                { children }
             </div>
-            }
-        </div>
         )
        
     }

@@ -1,3 +1,17 @@
 .ProgressBar .hidden {
     display:none
 }
+.ProgressBar h2{
+    margin-top:5vh;
+    margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 640px) {
+    .ProgressBar .Bar {
+        width: 250px;
+    }
+
+    .ProgressBar h2 {
+        display: none;
+    }
+}

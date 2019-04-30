@@ -11,6 +11,13 @@ import DisplayWine from './DisplayWine'
 import './Quizz.css';
 
 
+const imgQuestion = ["image1.jpg",
+    "image2.jpg",
+    "image3.jpg",
+    "image4.jpg",
+    "image5.jpg"]
+
+
 class Quizz extends Component {
     constructor(props) {
         super(props)
@@ -18,15 +25,15 @@ class Quizz extends Component {
             step: 0,
             choice: [],
             percentage: 0,
-            progress : "",
+            progress: "",
         }
     }
 
     plusStep = (e) => {
         if (this.state.step < 4) {
-           
+
             let result = this.state.choice
-            
+
             result.push(e.target.value)
             this.setState({ choice: result })
             this.setState({
@@ -37,11 +44,11 @@ class Quizz extends Component {
             this.setState({
                 step: 4,
                 percentage: 0,
-                progress:"",
+                progress: "",
+                img: "",
             })
         }
     }
-
 
     getQuestion = () => {
         let mycmd;
@@ -50,17 +57,13 @@ class Quizz extends Component {
                 mycmd = <Question1 plusStep={this.plusStep} />;
                 break;
             case 1:
-                mycmd = <Question2 plusStep={this.plusStep} choice={this.state.choice} goBackQuestion={this.goBackQuestion}/>;
+                mycmd = <Question2 plusStep={this.plusStep} choice={this.state.choice} goBackQuestion={this.goBackQuestion} />;
                 break;
             case 2:
-                mycmd = <Question3 plusStep={this.plusStep} choice={this.state.choice} goBackQuestion={this.goBackQuestion}/>;
+                mycmd = <Question3 plusStep={this.plusStep} choice={this.state.choice} goBackQuestion={this.goBackQuestion} />;
                 break;
             case 3:
-                mycmd = <Question4 plusStep={this.plusStep} choice={this.state.choice} goBackQuestion={this.goBackQuestion}/>;
-                break;
-            case 4:
-                mycmd = <DisplayWine budget={this.state.choice[2]} dish={this.state.choice[1]} characteristics={this.state.choice[3]} />
-                if (this.state.progress !== "hidden"){this.setState({progress: "hidden"})};
+                mycmd = <Question4 plusStep={this.plusStep} choice={this.state.choice} goBackQuestion={this.goBackQuestion} />;
                 break;
             default:
                 mycmd = <Question1 />
@@ -68,40 +71,47 @@ class Quizz extends Component {
         return mycmd
     }
 
-
-
-  
-
-    goBackQuestion = (event)=>{
-        if (this.state.step < 4){ 
-        const choice = this.state.choice
-        const ind = choice.findIndex(x => x=== event.target.value) 
-        const newChoice =choice
-        newChoice.splice(ind, choice.length)
-        this.setState({step:ind});
-        this.setState({choice : newChoice})
-        const newPercentage = (ind) * 25
-        this.setState({percentage : newPercentage})
-                
-    }
-             
+    goBackQuestion = (event) => {
+        if (this.state.step < 4) {
+            const choice = this.state.choice
+            const ind = choice.findIndex(x => x === event.target.value)
+            const newChoice = choice
+            newChoice.splice(ind, choice.length)
+            this.setState({ step: ind });
+            this.setState({ choice: newChoice })
+            const newPercentage = (ind) * 25
+            this.setState({ percentage: newPercentage })
         }
-       
+    }
 
     render() {
         return (
-            <Container className="Quizz">
-                <Row>
-                    <Col className="text-center">
-                        <div>
-                        <Tagbutton choice={this.state.choice} step = {this.state.step} goBackQuestion={this.goBackQuestion}/>
-                        <ProgressBar progress = {this.state.progress} percentage={this.state.percentage} />
-                        {this.getQuestion()}
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
+            (this.state.step < 4)
+                ?
+                <Container className="Quizz">
+                    <Row className="band">
+                        <Col lg="5" className="imgLeft">
+                            <img className={this.state.progress} src={imgQuestion[this.state.step]} alt="imgQuestion" />
+                        </Col>
+                        <Col lg="7" className="text-center textRight">
+                            <div className="progressBar2">
+                                <ProgressBar progress={this.state.progress} percentage={this.state.percentage} />
+                            </div>
+                            <div>
+                                <Tagbutton choice={this.state.choice} step={this.state.step} goBackQuestion={this.goBackQuestion} />
+                            </div>
+                            {this.getQuestion()}
+                        </Col>
+                    </Row>
+                </Container> :
+                <Container className="Quizz">
+                    <Row className="band">
+                        <Tagbutton choice={this.state.choice} step={this.state.step} goBackQuestion={this.goBackQuestion} />
+                        <DisplayWine budget={this.state.choice[2]} dish={this.state.choice[1]} characteristics={this.state.choice[3]} />
+                    </Row>
+                </Container>
+
         )
     }
 }
-export default Quizz
+export default Quizz;

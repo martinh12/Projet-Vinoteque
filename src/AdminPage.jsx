@@ -29,6 +29,7 @@ class AdminPage extends Component {
     render() {
         return (
             <Container className="AdminPage">
+            <h1>Espace Administration</h1>
                 <Row>
                     <NavLink exact to="/adminForm" activeStyle={{ color: "red" }}>
                         <Button>Ajout vin</Button>

@@ -8,14 +8,44 @@
 }
 
 .Filler {
-  background: blue;
+  background: rgb(143, 60, 60);
   height: 100%;
   border-radius: inherit;
   transition: width .2s ease-in;
 }
+.Quizz .band{
+  padding: 1vh;
+  width:75vw;
+  margin-bottom:3vh;
+}
 
+.Quizz img {
+  height: 100%;
+}
+
+.Quizz .imgQuizz > img{
+  width:100%;
+  height:auto;
+}
+
+.Quizz .imgLeft{
+  height:70vh;
+  display: flex;
+  justify-content: center;
+}
+
+.Quizz .textRight{
+  height:70vh;
+  justify-content: center;
+  align-items: center;
+
+}
 .Quizz {
   flex-grow: 1;
+  background-color: #fff7ee;
+  display:flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .Quizz li {
@@ -25,10 +55,90 @@
 .Quizz button {
   margin-right: 10px;
   padding: 7px 12px;
-  font-size: 14px;
-  background: #d14836;
+  font-size: 25px;
+  background: rgb(143, 60, 60);
   color: white;
   font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   outline: 0;
+  border-radius: 10px;
+  margin-bottom:2vh;
+  border:rgb(143, 60, 60);
+}
+.Quizz button:hover{
+  background: #8DAE8B;
+  color:black;
+  transition: 0.3s;
+}
+.Tagbutton button{
+  background-color:#8DAE8B ;
+  border:1px solid #8DAE8B ;
+  color:black;
+  margin-top:4vh;
+  margin-bottom: 1vh;
+  border-radius: 10px;
+}
+.Quizz .hidden {
+  display:none
+}
+.Tagbutton button:hover{
+  background:rgb(143, 60, 60);
+  color:white;
+  transition: 0.3s;
+}
+
+.Question1 h2{
+  margin-top:2vh;
+  margin-bottom:2vh;
+}
+.Question2 h2{
+  margin-top:2vh;
+  margin-bottom:2vh;
+}
+.Question3 h2{
+  margin-top:2vh;
+  margin-bottom:2vh;
+}
+.Question4 h2{
+  margin-top:2vh;
+  margin-bottom:2vh;
+}
+.Question2 button{
+  margin-top:2vh;
+}
+
+@media screen and (max-width: 640px) {
+  .Quizz .imgLeft {
+    display: none;
+  }
+
+  .Quizz button {
+    font-size : 15px;
+  }
+
+  .Quizz .Question1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .Quizz .Question1 button {
+    width : 50%;
+    margin-left:25%;
+  }
+
+  .Quizz .Question1 h2 {
+    margin-bottom : 25%;
+  }
+
+  .Quizz .Question3 h2 {
+    margin-bottom : 25%;
+  }
+
+  .Tagbutton button{
+    font-size: 10px;
+    margin-top : 3%;
+    margin-bottom: 1%;
+  }
+
 }
