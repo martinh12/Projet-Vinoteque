@@ -72,11 +72,16 @@
       display: none;
    }
 
+   .Home .textRight{
+      margin-bottom: 30px;
+   }
+
    .Home {
       display:flex;
       align-items: flex-end;
    }
-   .Home .buttons{
-      margin-top:0;
+   .Home .buttons {
+      margin-top: 0;
    }
+ 
 }
