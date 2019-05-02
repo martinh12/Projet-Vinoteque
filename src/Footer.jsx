@@ -8,19 +8,20 @@ function Footer(props) {
         <div className="Footer">
             <div className="container">
                 <div className="row">
-                    <div className="logo col-sm-4">
-                        <img src="vinphone.png" alt="vinphone"></img>
+                    <div className="col-xs-2 logoLeft">
+                        <SocialIcon url="http://facebook.com" bgColor="#fff7ee" />
+                    </div>
+                    <div className="col-xs-2 logoLeft">
+                        <SocialIcon url="http://twitter.com/jaketrent" bgColor="#fff7ee" />
                     </div>
                     <div className="title col-sm-4">
                         <NavLink exact to="/" >Accueil</NavLink> - <NavLink to="/contactform" >Contact</NavLink>
                     </div>
-                    <div className="col-sm-4">
-                        <div className="text-center">
-                            <SocialIcon url="http://facebook.com" bgColor="white" />
-                            <SocialIcon url="http://twitter.com/jaketrent" bgColor="white" />
-                            <SocialIcon url="http://pinterest.com" bgColor="white" />
-                            <SocialIcon url="http://instagram.com" bgColor="white" />
-                        </div>
+                    <div className="col-xs-2 logoRight">
+                        <SocialIcon url="http://pinterest.com" bgColor="#fff7ee" />
+                    </div>
+                    <div className="col-xs-2 logoRight">
+                        <SocialIcon url="http://instagram.com" bgColor="#fff7ee" />
                     </div>
                 </div>
                 <p>In Vino Veritas - ©Tous droits réservés - 2019</p>

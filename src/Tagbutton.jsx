@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import gvft from './trads';
+import "./Quizz.css" 
 
 class Tagbutton extends Component {
     render() {

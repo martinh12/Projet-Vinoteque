@@ -1,21 +1,87 @@
 .Home {
    flex-grow: 1;
+   background-color: #fff7ee;
+   display:flex;
+   align-items: center;
+   justify-content: center;
 }
+.Home .band{
+   padding: 1vh;
+}
+.Home .imgLeft{
+   height:70vh;
+   display: flex;
+   justify-content: center;
 
+}
+.Home .logo{
+   height:100%;
+
+}
+.Home .textRight{
+   height:70vh;
+}
 .Home h2{
     text-align: center;
     display: block;
-    margin-top: 30px;
-    font-size: 150%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    margin-bottom: 0;
+    margin-top: 2vh;
+    font-size: 175%;
 }
+.Home .buttons{
+   margin-top:40px;
 
+}
 .Home .quizz{
+   color:white;
+   font-weight: bold;
+   height:10vh;
+   width:20vh;
    display: block;
    margin : auto;
+   background-color:rgb(143, 60, 60);
+   border: 1px solid rgb(143, 60, 60);
 }
-
+.Home .btn-secondary:hover{
+   color : black;
+   text-decoration: none;
+   background-color: #8DAE8B;
+}
 
 .Home .random{
+   color:white;
+   font-weight: bold;
    display: block;
-   margin : auto;
+   margin-right:auto;
+   margin-left:auto;
+   margin-bottom:2vh;
+   height:10vh;
+   width:20vh;
+   background-color: rgb(143, 60, 60);
+   border: 1px solid rgb(143, 60, 60);
+}
+
+.Home .nav:hover{
+   text-decoration: none;
+}
+
+@media screen and (max-width: 640px) {
+   .Home .imgLeft {
+      display: none;
+   }
+
+   .Home .textRight{
+      margin-bottom: 30px;
+   }
+
+   .Home {
+      display:flex;
+      align-items: flex-end;
+   }
+   .Home .buttons {
+      margin-top: 0;
+   }
+ 
 }

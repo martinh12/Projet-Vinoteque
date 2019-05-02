@@ -1,25 +1,20 @@
 import React, { Component } from 'react';
-import { Route, Switch, NavLink } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Contactform from './Contactform'
 import Accueil from './Accueil'
 import Quizz from './Quizz'
 import AdminForm from './AdminForm'
 import AdminPage from "./AdminPage"
 import Footer from "./Footer"
+import Header from "./Header"
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-
-      <div className = 'App'>
-      <div className="custom-navbar">
-          
-        <button>
-          <NavLink to="/adminPage" activeStyle={{color: "red"}}> Administration </NavLink>
-        </button>  
-      </div>
       
+      <div className = 'App'>
+          <Header/>
         <Switch>
           <Route exact path="/" component={Accueil} />
           <Route path="/quizz" component={Quizz} />
