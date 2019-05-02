@@ -58,4 +58,4 @@ class DisplayWine extends Component {
     }
 }
 
-export default DisplayWine
+export default DisplayWine;
